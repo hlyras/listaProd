@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	
+	<title>Exercicio-01 - Ton.</title>
+	
+</head>
+<body>
+	<article>
+		<header>
+			<h1>  *** Lista de Produtos *** </h1>
+			<h2> - Digitação Produtos.</h2>
+		</header>
+		<form name="formProd" method="get" action="">
+			<p>
+				<label>Produto.:<input type="text" name="produto"> </label>
+				<label>Preço.:<input type="text" name="preco"> </label>
+				<p class="submit"> 
+					<input type="submit" onclick="carregaArray();" value="Enviar" /> </p>
+				</p>
+		</form>
+	</article>
+
+
+	<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+	var produto = new Array ();
+	var preco   = new Array ();
+	var i = 0;
+	var proximo;
+	var menor50 = 0;
+	var media100 = 0;
+	var qtd100 = 0;
+
+
+	function carregaArray() {
+		// body...
+		produto[i] = document.forms['formProd']['produto'].value;
+		preco[i]   = document.forms['formProd']['preco'].value;
+		i++;
+		if (i > 5){
+			listaProd();
+		}
+	}
+
+	function listaProd() {
+		// body...
+		for (i = 0; i < 5; i++) {
+			if (preco[i] < 50){
+				menor50++;
+			} else if (preco[i] > 100) {
+						qtd100++;
+						media100 = preco[i];
+					}
+		}
+
+		document.write("quantidade produtos inferior a 50,00 : " menor50 + "<BR>");
+		for (i = 0; i < 5; i++) {
+			if (preco[i] >= 50 && preco[i] <= 100){
+				document.write("Nome produto entre 50,00 e 100,00 : " produto[i] + "<BR>");
+			} 
+		}
+		document.write("Media preco > 100,00 : " (media100 = media100 / qtd100 + "<BR>");
+	}
+	</SCRIPT>
+
+
+
+ 
+</body>
+</html>
