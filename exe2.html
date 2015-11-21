@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos</title>
+</head>
+<body>
+  <script type="text/javascript" src="file:///home/lyra/project/listaProd/met2.js"></script>
+  <script type="text/javascript" src="file:///home/lyra/project/listaProd/function.js"></script>
+  <script type="text/javascript">
+
+    qtdProduts = parseInt(prompt("Digite quantos produtos serão criados"))
+    //idx = 0
+    ids = []
+    for(i=0; i<qtdProduts; i++){
+      var c1 = new Produto();
+      c1.nome = prompt("Digite o nome do produto");
+      c1.preco = parseInt(prompt("Digite o preço do produto " + c1.nome));
+      c1.id="P" + c1.nome
+      ids.push(c1);
+    }
+  </script>
+
+</body>
+</html>
