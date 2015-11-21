@@ -10,7 +10,7 @@
 	      var c1 = new Produto();
 	      c1.nome = prompt("Digite o nome do produto");
 	      c1.preco = parseInt(prompt("Digite o preço do produto " + c1.nome));
-	      c1.id="P" + c1.nome;
+	      c1.id="id." + c1.nome;
 	      ids.push(c1);
 	      c1.processo();
 	    }
