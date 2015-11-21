@@ -1,3 +1,4 @@
+//Variavéis globais;
 qtd50 = 0;
 qtd100 = 0;
 soma100 = 0;
@@ -8,6 +9,7 @@ nomeProd = [];
 //Objetos, metodos e atributos;
 var Produto = function(){
 	//atributos públicos;
+	this.id;
 	this.nome;
 	this.preco;
 
