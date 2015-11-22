@@ -56,12 +56,12 @@ var Produto = function(){
 	}
 	//Lembrete;
 	//metodo privadoo
-	var informacao = function(){
+	/*var informacao = function(){
 		alert("Metodo privado")
 	}
 	//usando metodo privado através de um  
 	//metodo publico
 	this.useMetodoPrivadoInformacao = function(){
 		return informacao();
-	}
+	}*/
 }
