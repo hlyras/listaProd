@@ -1,4 +1,4 @@
-Relator de Produtos --version= 0.1.0
+Relator de Produtos --version= 0.1.3
 
 Funções do Programa- 
  
